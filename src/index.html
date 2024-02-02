@@ -6,20 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="bg-[url('/assets/Coding-Challenge-Image.png')] h-screen w-screen bg-cover bg-center bg-no-repeat">
-        <h1 class="text-white text-2xl sm:text-4xl md:text-6xl lg:text-8xl">Explore</h1>
        
-        <div class="flex items-center">
-        <img class="w-12" src = "/assets/Plus.svg" alt="Plus logo"/>
-        <span class="text-white ml-4">More details</span>
+        <!-- main heading section -->
+        <div class="flex-col items-center fixed bottom-24 sm:left-44 left-4 p-4 text-white z-10">
+            <h1 class="text-white text-8xl sm:text-[140px] md:text-[180px] lg:text-[224px] font-GFS-Didot">Explore</h1>
+          
+            <div class="flex items-center pt-4">
+                <img class="w-[68px]" src="/assets/Plus.svg" alt="Plus logo"/>
+                <span class="text-white ml-2 text-[25px] font-lato">More details</span>
             </div>
-
-        <div class="flex-col">
-            <img class="w-12" src = "/assets/Facebook.svg" alt="Facebook logo"/>
-            <img class="w-12" src = "/assets/Instagram.svg" alt="Instagram logo"/>
         </div>
-    </div>
+
+        <!-- social media icons -->
+        <div class="flex-col fixed bottom-10 right-4">
+            <img class="w-[68px]" src="/assets/Facebook.svg" alt="Facebook logo"/>
+            <img class="w-[68px] pt-4" src="/assets/Instagram.svg" alt="Instagram logo"/>
+        </div>
+
+        <!-- left side background color -->
+        <div class="bg-[#4d1909] fixed w-[413px] h-full left-0 z-0">
+           
+        </div>
+
+
+
+
 </body>
 </html>
