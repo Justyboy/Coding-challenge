@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore</title>
     <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,31 +15,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <div class="bg-[url('/assets/Coding-Challenge-Image.png')] h-screen w-screen bg-cover bg-center bg-no-repeat">
+<body class="font-lato">
+    <div class="bg-[url('/assets/Coding-Challenge-Image.png')] h-screen w-screen bg-cover bg-bottom bg-no-repeat">
        
         <!-- main heading section -->
         <div class="flex-col items-center fixed bottom-24 sm:left-44 left-4 p-4 text-white z-10">
-            <h1 class="text-white text-8xl sm:text-[140px] md:text-[180px] lg:text-[224px] font-GFS-Didot">Explore</h1>
+            <h1 class="text-white text-8xl sm:text-[110px] md:text-[160px] lg:text-[180px] font-GFS-Didot">Explore</h1>
           
             <div class="flex items-center pt-4">
-                <img class="w-[68px]" src="/assets/Plus.svg" alt="Plus logo"/>
-                <span class="text-white ml-2 text-[25px] font-lato">More details</span>
+                <img class="w-[42px]" src="/assets/Plus.svg" alt="Plus logo"/>
+                <span class="text-white ml-2 text-[24px] font-lato">More details</span>
             </div>
         </div>
 
         <!-- social media icons -->
         <div class="flex-col fixed bottom-10 right-4">
-            <img class="w-[68px]" src="/assets/Facebook.svg" alt="Facebook logo"/>
-            <img class="w-[68px] pt-4" src="/assets/Instagram.svg" alt="Instagram logo"/>
+            <img class="w-[42px]" src="/assets/Facebook.svg" alt="Facebook logo"/>
+            <img class="w-[42px] pt-2" src="/assets/Instagram.svg" alt="Instagram logo"/>
         </div>
 
         <!-- left side background color -->
-        <div class="bg-[#4d1909] fixed w-[413px] h-full left-0 z-0">
-           
-        </div>
+        <div class="bg-[#611818] fixed w-[413px] h-full left-0 z-0"></div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal border-1 border-orange-300 drop-shadow-lg w-[500px] h-[620px] bg-white flex-col fixed z-20 top-14 left-32 px-12 py-4">
+            
+            <!-- Modal content -->
+            <div class="relative rounded-sm flex-col">
+          
+                    <span class="close relative flex left-[20px] justify-end text-2xl text-[#611818] -top-3 ">&times;</span>
 
+        
 
+                <div class="flex-col pt-8">
+                  
+                <div class="text-[#611818] text-2xl lg:text-[66px] pb-4 font-GFS-Didot">Explore</div>
+                <div class="py-6">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                </div>
+                <button class="bg-gradient-to-r from-[#611818] to-[#A36754] w-[235px] h-[55px] my-4 text-white uppercase" >Read More </button>
+            </div>
+            </div>
+        </div><!-- END the modal -->
 
 
 </body>
