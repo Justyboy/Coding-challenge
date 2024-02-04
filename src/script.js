@@ -23,8 +23,6 @@ for (let i = 0; i < btn.length; i++) {
       modal.style.opacity = 1;
       title.style.display = "none";
     }, 200);
-
-
   });
 }
 
@@ -34,40 +32,16 @@ closeModal.onclick = function () {
 };
 
 // Close the modal when clicking outside of it
-window.onclick = function(e) {
-  if (e.target === modal) {
 
-    closeModalFunction();
-  }
-}
-
-
-
-
-// Detect all clicks on the document
 document.addEventListener("click", function(event) {
   // If user clicks inside the element, do nothing
   if (event.target.closest("#myModal")) return;
-
   // If user clicks outside the element, hide it!
-
-  
   closeModalFunction();
 });
 
 
-
-
-
 function closeModalFunction() {
-  modal.style.opacity = 0;
-
-  // Use setTimeout to ensure the transition completes before hiding the modal
-  setTimeout(() => {
-    modal.style.display = "none";
-      // Display the title
+  modal.style.display = "none";
   title.style.display = "block";
-  }, 100); 
-
-
 }
