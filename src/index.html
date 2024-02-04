@@ -20,47 +20,45 @@
     <div class="bg-[url('/assets/Coding-Challenge-Image.png')] h-screen w-screen bg-cover bg-bottom bg-no-repeat">
        
         <!-- main heading section -->
-        <div class="flex-col items-center fixed bottom-28 sm:left-48 left-4 p-4 text-white z-10">
-            <h1 class="text-white text-8xl sm:text-[110px] md:text-[160px] lg:text-[180px] font-GFS-Didot">Explore</h1>
+        <div id="title" class="flex-col items-center fixed bottom-36 sm:left-48 left-4 p-4 text-white z-10 duration-5000 ease-in-out">
+            <h1 class=" text-white text-[92px] sm:text-[100px] md:text-[160px] lg:text-[180px] xl:text-[280px] font-GFS-Didot">Explore</h1>
           
             <div class="flex items-center pt-4">
-                <img class="btn w-[46px]" src="/assets/Plus.svg" alt="Plus logo"/>
-                <span class="text-white ml-4 text-[22px] font-lato">More details</span>
+                <img class="btn w-[46px] hover:scale-125 ease-in-out duration-500" src="/assets/Plus.svg" alt="Plus logo"/>
+                <span class="text-white ml-4 text-[22px] xl:text-[32px] font-lato">More details</span>
             </div>
         </div>
 
         <!-- social media icons -->
-        <div class="flex-col fixed bottom-10 right-4">
-            <img class="w-[46px]" src="/assets/Facebook.svg" alt="Facebook logo"/>
-            <img class="w-[46px] pt-2" src="/assets/Instagram.svg" alt="Instagram logo"/>
+        <div class="flex-col fixed bottom-2 sm:bottom-10 right-4">
+            <img class="w-[46px] hover:scale-125 ease-in-out duration-500" src="/assets/Facebook.svg" alt="Facebook logo"/>
+            <img class="w-[46px] hover:scale-125 ease-in-out duration-500 pt-3" src="/assets/Instagram.svg" alt="Instagram logo"/>
         </div>
 
         <!-- left side background color -->
-        <div class="bg-[#611818] fixed sm:w-[400px] w-[230px] h-full left-0 z-0"></div>
+        <div class="bg-[#611818] fixed sm:w-[400px] xl:w-[500px] w-[230px] h-full left-0 z-0"></div>
         
-        <!-- The Modal -->
-        <div id="myModal" class="modal hidden drop-shadow-lg h-max sm:w-[500px] 
-         bg-white flex-col fixed z-20 top-2 left-4 right-4 sm:left-32 sm:px-12 px-8">
-            
-            <!-- Modal content -->
-            <div class="relative rounded-sm flex-col">
-          
-                    <span class="close cursor-pointer relative flex left-3 sm:left-[20px] justify-end text-2xl text-[#611818] bottom-5 top-1">&times;</span>
+       <!-- The Modal -->
+       <div id="myModal" class="hidden drop-shadow-lg h-max sm:w-[500px] bg-white flex-col fixed z-10 sm:top-14 sm:right-4 sm:left-52 sm:px-12 px-8 transition-all duration-1000 ease-in-out">
 
-        
-
-                <div class="flex-col pt-8 pb-4">
-                  
-                <div class="text-[#611818] text-6xl lg:text-[66px] pb-4 font-GFS-Didot">Explore</div>
-                <div class="py-6 text-md sm:text-lg">
+       
+    <!-- Modal content -->
+    <div class="relative rounded-sm flex-col duration-5000 ease-in-out">
+        <span class="close cursor-pointer relative flex left-3 sm:left-[20px] justify-end text-2xl text-[#611818] bottom-5 top-1">&times;</span>
+        <div class="flex-col pt-4 pb-4">
+            <div class="text-[#611818] text-6xl lg:text-[66px]  pb-2 sm:pb-0 font-GFS-Didot">Explore</div>
+            <div class="py-4 text-md sm:text-md">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-                </div>
-                <button class="bg-gradient-to-r from-[#611818] to-[#A36754] w-[235px] h-[55px] my-4  text-white uppercase" >Read More </button>
             </div>
-            </div>
-        </div>
-        <!-- END the modal -->
+            <button class="bg-gradient-to-r from-[#611818] to-[#A36754] w-[235px] h-[55px] my-4 text-white uppercase
+             hover:bg-gradient-to-r  hover:from-[#A36754]  hover:to-[#611818] transition duration-1000 ease-in-out 
+    ">Read More</button>
 
+
+        </div>
+    </div>
+</div>
+<!-- END the modal -->
 
         <script rel="script" src="script.js"></script>
 
