@@ -584,6 +584,14 @@ video {
   top: 0.25rem;
 }
 
+.bottom-44 {
+  bottom: 11rem;
+}
+
+.bottom-64 {
+  bottom: 16rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -646,14 +654,20 @@ video {
   width: 100vw;
 }
 
-@keyframes pulse {
-  50% {
-    opacity: .5;
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.animate-fade-up {
+  animation: fade-up 1s both;
 }
 
 @keyframes jump-in {
@@ -674,50 +688,14 @@ video {
   animation: jump-in .5s both;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
+@keyframes pulse {
   50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
+    opacity: .5;
   }
 }
 
-.animate-bounce {
-  animation: bounce 1s infinite;
-}
-
-@keyframes wiggle {
-  0%, 100% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-}
-
-.animate-wiggle {
-  animation: wiggle 1s both;
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 1s both;
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -750,16 +728,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/Coding-Challenge-Image\.png\'\)\] {
-  background-image: url('/assets/Coding-Challenge-Image.png');
+.bg-\[url\(\'\.\.\/assets\/Coding-Challenge-Image\.png\'\)\] {
+  background-image: url('../assets/Coding-Challenge-Image.png');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\.\/assets\/Coding-Challenge-Image\.png\'\)\] {
-  background-image: url('../assets/Coding-Challenge-Image.png');
 }
 
 .from-\[\#611818\] {
@@ -889,20 +863,8 @@ video {
   animation-delay: 300ms;
 }
 
-.animate-delay-\[85ms\] {
-  animation-delay: 85ms;
-}
-
-.animate-delay-\[8500ms\] {
-  animation-delay: 8500ms;
-}
-
 .animate-once {
   animation-iteration-count: 1;
-}
-
-.animate-twice {
-  animation-iteration-count: 2;
 }
 
 .hover\:scale-125:hover {
@@ -923,12 +885,6 @@ video {
 
 .hover\:to-\[\#611818\]:hover {
   --tw-gradient-to: #611818 var(--tw-gradient-to-position);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .motion-reduce\:animate-none {
-    animation: none;
-  }
 }
 
 @media (min-width: 640px) {
@@ -954,6 +910,14 @@ video {
 
   .sm\:top-14 {
     top: 3.5rem;
+  }
+
+  .sm\:bottom-36 {
+    bottom: 9rem;
+  }
+
+  .sm\:left-32 {
+    left: 8rem;
   }
 
   .sm\:w-\[400px\] {
