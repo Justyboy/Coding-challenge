@@ -758,6 +758,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/assets\/Coding-Challenge-Image\.png\'\)\] {
+  background-image: url('../assets/Coding-Challenge-Image.png');
+}
+
 .from-\[\#611818\] {
   --tw-gradient-from: #611818 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(97 24 24 / 0) var(--tw-gradient-to-position);
