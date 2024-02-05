@@ -14,13 +14,11 @@ const closeModal = document.getElementsByClassName("close")[0];
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function () {
     // When a button is clicked, display the modal with a fade-in transition
-    modal.style.opacity = 0;
-    modal.style.transition = "opacity 1000ms";
 
     // Use setTimeout to ensure the transition starts after setting the initial opacity
     setTimeout(() => {
       modal.style.display = "block";
-      modal.style.opacity = 1;
+      modal.classList.add("animate-fade-up");
       title.style.display = "none";
     }, 200);
   });
@@ -45,3 +43,4 @@ function closeModalFunction() {
   modal.style.display = "none";
   title.style.display = "block";
 }
+    

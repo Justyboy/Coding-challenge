@@ -592,10 +592,6 @@ video {
   z-index: 10;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -660,6 +656,24 @@ video {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@keyframes jump-in {
+  0% {
+    transform: scale(0%);
+  }
+
+  80% {
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.animate-jump-in {
+  animation: jump-in .5s both;
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -674,6 +688,36 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 1s both;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s both;
 }
 
 .cursor-pointer {
@@ -829,16 +873,32 @@ video {
   transition-duration: 1000ms;
 }
 
-.duration-700 {
-  transition-duration: 700ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
 }
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-\[85ms\] {
+  animation-delay: 85ms;
+}
+
+.animate-delay-\[8500ms\] {
+  animation-delay: 8500ms;
+}
+
+.animate-once {
+  animation-iteration-count: 1;
+}
+
+.animate-twice {
+  animation-iteration-count: 2;
 }
 
 .hover\:scale-125:hover {
@@ -859,6 +919,12 @@ video {
 
 .hover\:to-\[\#611818\]:hover {
   --tw-gradient-to: #611818 var(--tw-gradient-to-position);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce\:animate-none {
+    animation: none;
+  }
 }
 
 @media (min-width: 640px) {
@@ -929,8 +995,8 @@ video {
     width: 500px;
   }
 
-  .xl\:text-\[280px\] {
-    font-size: 280px;
+  .xl\:text-\[240px\] {
+    font-size: 240px;
   }
 
   .xl\:text-\[32px\] {
